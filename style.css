@@ -1,0 +1,60 @@
+nav a {
+  color: crimson;
+  text-decoration: none;
+}
+
+.about blockquote {
+  background-color: #eaeaea;
+}
+
+.users span {
+  font-weight: bold;
+}
+
+.users span:nth-of-type(2) {
+  color: crimson;
+}
+
+.creators .link {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.creators .link.font {
+  font-family: "PT Serif", serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta h2 {
+  font-family: "Lato", sans-serif;
+  color: crimson;
+}
+
+ul li:nth-child(odd) {
+  text-decoration: underline;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: crimson;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
